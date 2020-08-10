@@ -1,0 +1,388 @@
+@charset "utf-8";
+/* CSS Document */
+
+row.row_img {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+column.column_img {
+   float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.navbar {
+	background-color: white; 
+	padding-bottom: -7%;
+}
+
+.navbar-brand{
+	float: left;
+	margin-top: -15%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 5%;
+	position: absolute;
+}
+
+.navbar-brand img:hover {
+	color: grey;
+}
+
+.jumbotron img:hover {
+	color: grey;
+	
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #ffffff;
+}
+
+.status- {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  
+  /* centers the loading animation horizontally one the screen */
+  
+  /* centers the loading animation vertically one the screen */
+  background-image: url("https://www.cavedetain.com/boutique/catalogue/files/html/static/styles/img/lightbox-preloader.gif");
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */ }
+
+
+
+.fa-search{
+	padding-right: .5%;
+	padding-left: 13%;
+	
+}
+
+.fa-shopping-cart {
+	margin-left:   60%;
+	padding-left: 0%;
+	color: black;
+	padding-right: 5%
+	
+}
+
+
+.fa-shopping-cart: hover {
+	color: dimgrey;
+}
+
+ .nav li a:hover {
+    background: transparent;
+    color: black;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: transparent;
+  font-weight: bold;
+}
+
+ .nav li.active > a {
+    background-color: transparent;
+    color: black;
+}
+
+a {
+  text-decoration: none !important;
+  outline: none;
+}
+
+.nav-link {
+	color: #202428;
+}
+
+.nav-item {
+		
+	
+}
+.card {
+		width: 22.22%;
+        position: relative;
+        display: inline-block;
+		margin-bottom: 3%;
+		margin-right: 3%;
+		margin-left: 5%;
+		border-color:white;
+		
+		
+    }
+ .card .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+	 border-color:white;
+    }
+ .card:hover .img-top {
+        display: inline;
+    }
+
+.card p{
+	margin-bottom: 1%;
+		margin-right: -20%;
+		margin-left: 5%;
+}
+
+.fa-facebook, .fa-instagram, .fa-twitter{
+	padding-right: 10%;
+	float: left;
+	resize: 5%%;
+}
+
+hr.tr_sec{
+	background-color: transparent;
+	color: transparent;
+	margin-bottom: 5%;
+}
+
+/* Essence Button */
+.essence-btn {
+  display: inline-block;
+  min-width: 170px;
+  height: 50px;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  padding: 0 40px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 50px;
+  background-color: #0315ff;
+  letter-spacing: 1.5px;
+  font-weight: 600; }
+  .essence-btn:hover, .essence-btn:focus {
+    color: #ffffff;
+    background-color: #dc0345; }
+
+
+.single-product-wrapper {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+  overflow: hidden;
+  background-color: #ffffff; }
+  .single-product-wrapper .product-img {
+    position: relative;
+    z-index: 1;
+    overflow: hidden; }
+    .single-product-wrapper .product-img img {
+      width: 100%;
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms; }
+    .single-product-wrapper .product-img .hover-img {
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      opacity: 0;
+      visibility: hidden; }
+    .single-product-wrapper .product-img .product-badge {
+      height: 25px;
+      background-color: #000000;
+      color: #ffffff;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 0 10px;
+      display: inline-block;
+      line-height: 25px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 10; }
+      .single-product-wrapper .product-img .product-badge.offer-badge {
+        background-color: #dc0345; }
+      .single-product-wrapper .product-img .product-badge.new-badge {
+        background-color: #0315ff; }
+    .single-product-wrapper .product-img .product-favourite a {
+      position: absolute;
+      height: 25px;
+      width: 45px;
+      font-size: 14px;
+      color: #ccc;
+      top: 20px;
+      right: 20px;
+      z-index: 10;
+      line-height: 25px;
+      background-color: #ffffff;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      opacity: 0;
+      visibility: hidden; }
+      .single-product-wrapper .product-img .product-favourite a.active {
+        opacity: 1;
+        visibility: visible; }
+  .single-product-wrapper .product-description {
+    position: relative;
+    z-index: 1;
+    padding-top: 25px; }
+    .single-product-wrapper .product-description span {
+      font-size: 10px;
+      text-transform: uppercase;
+      color: #787878;
+      margin-bottom: 15px;
+      letter-spacing: 0.75px;
+      font-weight: 600; }
+    .single-product-wrapper .product-description h6 {
+      color: #222222;
+      margin-bottom: 5px; }
+    .single-product-wrapper .product-description p {
+      margin-bottom: 0;
+      font-size: 14px;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 700;
+      color: #000000; }
+      .single-product-wrapper .product-description p span {
+        font-size: 14px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        color: #aaaaaa;
+        margin-right: 10px;
+        text-decoration: line-through; }
+    .single-product-wrapper .product-description .hover-content {
+      position: absolute;
+      width: calc(100% - 40px);
+      top: -70px;
+      left: 20px;
+      right: 20px;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms; }
+      .single-product-wrapper .product-description .hover-content .essence-btn {
+        width: 100%; }
+  .single-product-wrapper .favme {
+    cursor: pointer;
+    color: #ccc; }
+    .single-product-wrapper .favme.active {
+      color: #dc0345 !important; }
+    .single-product-wrapper .favme.is_animating {
+      animation: favme-anime .5s; }
+  .single-product-wrapper:hover .product-img .hover-img {
+    opacity: 1;
+    visibility: visible; }
+  .single-product-wrapper:hover .product-img .product-favourite a {
+    opacity: 1;
+    visibility: visible; }
+  .single-product-wrapper:hover .hover-content {
+    opacity: 1;
+    visibility: visible; }
+
+.go-top {
+  background-color: #202428;
+  bottom: 2em;
+  right: 2em;
+  color: #ffffff;
+  font-size: 32px;
+  display: none;
+  position: fixed;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.go-top:hover {
+    background: #dc0345;
+    color: #ffffff;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99 !important; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 50%; /* Full width */
+  height: 50%; /* Full height */
+  overflow-y: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid white;
+  width: 500px;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+	.navbar-brand{
+	float: left;
+	margin-top: -15%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 5%;
+	position: absolute;
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar-brand{
+	float: left;
+	margin-top: -15%;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-bottom: 5%;
+	position: absolute;
+	}
+}
+
+@media (max-width: 800px) {
+	.navbar-brand{
+	float: left;
+	margin-top: -15%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 5%;
+	position: absolute;
+	}
+}
